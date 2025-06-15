@@ -33,6 +33,7 @@
   max-height:none;
   background-color: #15171B;
   border-radius: 10px;
+  
 
   border: 1px solid black;
 }
@@ -49,6 +50,7 @@
   width: 100%;
     height: 82%;
     padding: 15px;
+    
 }
 
 /* Header inside the mainbox */
@@ -124,6 +126,7 @@ text-align: center;
   overflow-y: auto;
 }
 
+
 .task {
   background-color: #222;
   color: white;
@@ -141,6 +144,9 @@ text-align: center;
 .task:hover {
   background-color: #232629;
 }
+.task.taskitemupdate{
+  background-color: #004923;
+}
 
 /* Footer message */
 .mainsmainfooter {
@@ -155,34 +161,62 @@ text-align: center;
   font-weight: 500;
   margin-bottom: 5px;
 }
-.checkbox{
-  width: 17px;
+ .checkbox{
+  width:17px;
   height:17px;
-  border-radius:5px;
-  border: 1px solid #243344;
+  border-radius:4px;
+  border: 1px solid #254669;
   background-color: #232629;
-  cursor: pointer;
+   cursor: pointer;
   outline: none;
-  
+  color:#232629 ;
+} 
+.checkbox.update{
+  background-color:#1EEF6B;
+  color: white;
 
 }
-
 .task-text{
   margin-left: 8px;
+}
+.task-text.spanupdate{
+  text-decoration: line-through;
+  color: #88D1C2;
 }
 .deleteit{
     width: 30px;
   height: 30px;
   border-radius: 5px;
-  border: 1px solid #1E2223;
-  background-color: #1E2223;
+  border: 1px solid transparent;
+  background-color: transparent;
   cursor: pointer;
   outline: none;
-  
 }
 .deleteit:hover{
-  background-color: #4B0000;
+  background-color:#4B0000;
 }
 .deleteit i{
   color: #C34D4D;
+}
+
+.progress-container {
+  margin-top: 20px;
+  color: white;
+  font-size: 14px;
+}
+
+.progress-bar-background {
+  width: 100%;
+  height: 10px;
+  background-color: #333;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+#progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: green;
+  border-radius: 5px;
+  transition: width 0.3s ease-in-out;
 }
